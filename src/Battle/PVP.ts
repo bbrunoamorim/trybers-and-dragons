@@ -16,6 +16,6 @@ export default class PVP extends Battle {
 
   public fight(): number {
     this.fighting();
-    return this.player.lifePoints === -1 ? -1 : 1;
+    return super.fight();
   }
 }
